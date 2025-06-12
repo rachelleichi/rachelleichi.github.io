@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Unfold &mdash; A onepage portfolio HTML template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -320,10 +319,6 @@
             </div>
             <div class="col-lg-4 pr-lg-5">
               <h3 class="mb-4 heading-h3"><span class="gsap-reveal"></span></h3>
-              <!-- <p class="lead gsap-reveal">Hi! I'm [Your Name], a second-year student in the BUT R&T program at IUT Aix-Marseille, specializing in cybersecurity. I’m passionate about technology and its ever-evolving landscape, with a focus on system administration, coding, and networking. <a href="#">live the blind</a> texts. </p>
-              <p class="mb-4 gsap-reveal">Alongside my stududies , I’ve also been actively involved in volunteer work, supporting digital autonomy workshops through AFEV and UNIS-CITÉ. My goal is to apply my skills in cybersecurity and technology in real-world scenarios, and I’m excited to explore further opportunities in the field.
-
-                Feel free to explore my website to learn more about my projects, experiences, and the skills I’m developing!</p> -->
                 <p class="lead gsap-reveal">Bonjour, je suis MEFLAH RACHEL, étudiante en deuxième année de BUT Réseaux et Télécommunications avec une spécialisation en cybersécurité à l'IUT Aix-Marseille.  
                   <br>Avec un parcours en informatique à Avignon, je suis passionnée par la technologie et la cybersécurité. <br> 
                   J'aime relever des défis , tel que surmonter ma thalassophobie en apprenant a nager , rester active en faisant des randonnées et découvrir différentes cultures.  
@@ -351,9 +346,9 @@
                 <h3>Cyber <br> security</h3>
                 <p></p>
               </div> 
-            </div
+            </div>
 
-            <div class="col-md-6 col-lg-4 mb-4">
+          <div class="col-md-6 col-lg-4 mb-4">
               <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
                 <div class="wrap-icon mb-3">
                   <img src="images/svg/002-chat.svg" alt="Icon" width="45">
@@ -570,70 +565,25 @@
       </div>
       
       <!-- END blog posts -->
+      <!-- index.html -->
+      <section id="contact-section">
+        <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                // Load contact.html into #contact-section
+                fetch('contact.html')
+                  .then(response => response.text())
+                  .then(data => {
+                    document.getElementById('contact-section').innerHTML = data;
+                  })
+                  .catch(error => {
+                    console.error("Failed to load contact.html:", error);
+                  });
+              });
+            </script>
+      </section>
 
 
-      <div class="unslate_co--section" id="contact-section">
-        <div class="container">
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Get In Touch</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-
-
-          <div class="row justify-content-between">
-            
-            <div class="col-md-6">
-              <form method="post" class="form-outline-style-v1" id="contactForm">
-                <div class="form-group row mb-0">
-
-                  <div class="col-lg-6 form-group gsap-reveal">
-                    <label for="name">Name</label>
-                    <input name="name" type="text" class="form-control" id="name">
-                  </div>
-                  <div class="col-lg-6 form-group gsap-reveal">
-                    <label for="email">Email</label>
-                    <input name="email" type="email" class="form-control" id="email">
-                  </div>
-                  <div class="col-lg-12 form-group gsap-reveal">
-                    <label for="message">Write your message...</label>
-                    <textarea name="message" id="message" cols="30" rows="7" class="form-control"></textarea>
-                  </div>
-                </div>
-                <div class="form-group row gsap-reveal">
-                    <div class="col-md-12 d-flex align-items-center">
-                      <input type="submit" class="btn btn-outline-pill btn-custom-light mr-3" value="Send Message">
-                      <span class="submitting"></span>
-                    </div>
-                  </div>
-              </form>
-              <div id="form-message-warning" class="mt-4"></div> 
-              <div id="form-message-success">
-                Your message was sent, thank you!
-              </div>
-
-            </div>
-
-            <div class="col-md-4">
-              <div class="contact-info-v1">
-                <div class="gsap-reveal d-block">
-                  <span class="d-block contact-info-label">Email</span>
-                  <a href="#" class="contact-info-val">meflahrachel@gmail.com</a>
-                </div>
-                <div class="gsap-reveal d-block">
-                  <span class="d-block contact-info-label">Phone</span>
-                  <a href="#" class="contact-info-val">+33 744541045</a>
-                </div>
-                <div class="gsap-reveal d-block">
-                  <span class="d-block contact-info-label">Address</span>
-                  <address class="contact-info-val">5 rue Pierre Leca. <br> Marseille , 13003</address>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      </div> <!-- END .unslate_co-site-inner -->
+ <!-- END .unslate_co-site-inner -->
 
 
       
@@ -664,7 +614,7 @@
 
       
     </div>
-
+    
     
     <!-- Loader -->
     <div id="unslate_co--overlayer"></div>
