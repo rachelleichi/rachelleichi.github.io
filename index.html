@@ -124,156 +124,30 @@
       </div>
       <!-- END .cover-v1 -->
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sections = {
+      'portfolio-section': 'projects.html',
+      'about-section': 'about.html',
+      'services-section': 'competences.html',
+      'skills-section': 'skills.html',
+      'testimonial-section': 'stage.html',
+      'journal-section': 'experiences.html',
+      'contact-section': 'contact.html'
+    };
 
-<!-- Projects  -->
-    <section id="portfolio-section">
-        <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                // Load contact.html into #contact-section
-                fetch('projects.html')
-                  .then(response => response.text())
-                  .then(data => {
-                    document.getElementById('portfolio-section').innerHTML = data;
-                  })
-                  .catch(error => {
-                    console.error("Failed to load projects.html:", error);
-                  });
-              });
-            </script>
-      </section>
-      
-
-      <!-- <div class="unslate_co--section">
-        <div class="container">
-          <div class="owl-carousel logo-slider">
-            <div class="logo-v1 gsap-reveal">
-              <img src="images/logo-google.png" alt="Image" class="img-fluid">
-            </div>
-            <div class="logo-v1 gsap-reveal">
-              <img src="images/logo-puma.png" alt="Image" class="img-fluid">
-            </div>
-            <div class="logo-v1 gsap-reveal">
-              <img src="images/logo-paypal.png" alt="Image" class="img-fluid">
-            </div>
-            <div class="logo-v1 gsap-reveal">
-              <img src="images/logo-adobe.png" alt="Image" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-
-
- <!-- About Section -->
-
-    <section id="about-section">
-        <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                // Load contact.html into #contact-section
-                fetch('about.html')
-                  .then(response => response.text())
-                  .then(data => {
-                    document.getElementById('about-section').innerHTML = data;
-                  })
-                  .catch(error => {
-                    console.error("Failed to load about.html:", error);
-                  });
-              });
-            </script>
-      </section>
-
-      <!-- competences -->
-     <section id="services-section">
-        <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                // Load contact.html into #contact-section
-                fetch('competences.html')
-                  .then(response => response.text())
-                  .then(data => {
-                    document.getElementById('services-section').innerHTML = data;
-                  })
-                  .catch(error => {
-                    console.error("Failed to load competences.html:", error);
-                  });
-              });
-            </script>
-      </section>
-
-
-      <!-- skills -->
-     <section id="skills-section">
-        <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                // Load contact.html into #contact-section
-                fetch('skills.html')
-                  .then(response => response.text())
-                  .then(data => {
-                    document.getElementById('skills-section').innerHTML = data;
-                  })
-                  .catch(error => {
-                    console.error("Failed to load skills.html:", error);
-                  });
-              });
-            </script>
-      </section>
-
-
-       <!-- stage -->
-     <section id="testimonial-section">
-        <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                // Load contact.html into #contact-section
-                fetch('stage.html')
-                  .then(response => response.text())
-                  .then(data => {
-                    document.getElementById('testimonial-section').innerHTML = data;
-                  })
-                  .catch(error => {
-                    console.error("Failed to load stage.html:", error);
-                  });
-              });
-            </script>
-      </section>
-
-
-      <!-- END .counter -->
-
-       <!-- stage -->
-     <section id="journal-section">
-        <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                // Load contact.html into #contact-section
-                fetch('experiences.html')
-                  .then(response => response.text())
-                  .then(data => {
-                    document.getElementById('journal-section').innerHTML = data;
-                  })
-                  .catch(error => {
-                    console.error("Failed to load experiences.html:", error);
-                  });
-              });
-            </script>
-      </section>
-
-      
-      
-      <!-- END blog posts -->
-      <!-- index.html -->
-      <section id="contact-section">
-        <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                // Load contact.html into #contact-section
-                fetch('contact.html')
-                  .then(response => response.text())
-                  .then(data => {
-                    document.getElementById('contact-section').innerHTML = data;
-                  })
-                  .catch(error => {
-                    console.error("Failed to load contact.html:", error);
-                  });
-              });
-            </script>
-      </section>
+    for (const [id, file] of Object.entries(sections)) {
+      fetch(file)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+        })
+        .catch(error => {
+          console.error(`Failed to load ${file}:`, error);
+        });
+    }
+  });
+</script>
 
 
  <!-- END .unslate_co-site-inner -->
