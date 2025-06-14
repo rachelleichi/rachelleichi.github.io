@@ -123,168 +123,33 @@
 
       </div>
       <!-- END .cover-v1 -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sections = [
+      { id: 'portfolio-section', file: 'projects.html' },
+      { id: 'about-section', file: 'about.html' },
+      { id: 'services-section', file: 'competences.html' },
+      { id: 'skills-section', file: 'skills.html' },
+      { id: 'testimonial-section', file: 'stage.html' },
+      { id: 'journal-section', file: 'experiences.html' },
+      { id: 'contact-section', file: 'contact.html' }
+    ];
+
+    sections.forEach(section => {
+      fetch(section.file)
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById(section.id).innerHTML = html;
+        })
+        .catch(err => {
+          console.error(`Failed to load ${section.file}:`, err);
+        });
+    });
+  });
+</script>
 
 
-<!-- Projects  -->
-    <section id="portfolio-section">
-        <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                // Load contact.html into #contact-section
-                fetch('projects.html')
-                  .then(response => response.text())
-                  .then(data => {
-                    document.getElementById('portfolio-section').innerHTML = data;
-                  })
-                  .catch(error => {
-                    console.error("Failed to load projects.html:", error);
-                  });
-              });
-            </script>
-      </section>
 
-
- <!-- About Section -->
-
-    <section id="about-section">
-        <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                // Load contact.html into #contact-section
-                fetch('about.html')
-                  .then(response => response.text())
-                  .then(data => {
-                    document.getElementById('about-section').innerHTML = data;
-                  })
-                  .catch(error => {
-                    console.error("Failed to load about.html:", error);
-                  });
-              });
-            </script>
-      </section>
-
-      <!-- competences -->
-     <section id="services-section">
-        <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                // Load contact.html into #contact-section
-                fetch('competences.html')
-                  .then(response => response.text())
-                  .then(data => {
-                    document.getElementById('services-section').innerHTML = data;
-                  })
-                  .catch(error => {
-                    console.error("Failed to load competences.html:", error);
-                  });
-              });
-            </script>
-      </section>
-
-
-      <!-- skills -->
-     <section id="skills-section">
-        <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                // Load contact.html into #contact-section
-                fetch('skills.html')
-                  .then(response => response.text())
-                  .then(data => {
-                    document.getElementById('skills-section').innerHTML = data;
-                  })
-                  .catch(error => {
-                    console.error("Failed to load skills.html:", error);
-                  });
-              });
-            </script>
-      </section>
-
-
-       <!-- stage -->
-     <section id="testimonial-section">
-        <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                // Load contact.html into #contact-section
-                fetch('stage.html')
-                  .then(response => response.text())
-                  .then(data => {
-                    document.getElementById('testimonial-section').innerHTML = data;
-                  })
-                  .catch(error => {
-                    console.error("Failed to load stage.html:", error);
-                  });
-              });
-            </script>
-      </section>
-
-
-      <!-- END .counter -->
-
-       <!-- stage -->
-     <section id="journal-section">
-        <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                // Load contact.html into #contact-section
-                fetch('experiences.html')
-                  .then(response => response.text())
-                  .then(data => {
-                    document.getElementById('journal-section').innerHTML = data;
-                  })
-                  .catch(error => {
-                    console.error("Failed to load experiences.html:", error);
-                  });
-              });
-            </script>
-      </section>
-
-      
-      
-      <!-- END blog posts -->
-      <!-- index.html -->
-      <section id="contact-section">
-        <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                // Load contact.html into #contact-section
-                fetch('contact.html')
-                  .then(response => response.text())
-                  .then(data => {
-                    document.getElementById('contact-section').innerHTML = data;
-                  })
-                  .catch(error => {
-                    console.error("Failed to load contact.html:", error);
-                  });
-              });
-            </script>
-      </section>
-
-
- <!-- END .unslate_co-site-inner -->
-
-
-      
-      <!-- <footer class="unslate_co--footer unslate_co--section">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-7">
-              
-              <div class="footer-site-logo"><a href="#">Unfold<span>.</span></a></div>
-
-              <ul class="footer-site-social">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Dribbble</a></li>
-                <li><a href="#">Behance</a></li>
-              </ul>
-                
-               
-              
-              </p>
-
-            </div>
-          </div>
-        </div>
-      </footer> -->
-
-
-      
     </div>
     
     
