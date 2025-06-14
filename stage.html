@@ -1,122 +1,77 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <meta name="description" content="">
-    <meta name="keywords" content="html, css, javascript, jquery">
-    <meta name="author" content="">
-
-    <link rel="stylesheet" href="css/vendor/icomoon/style.css">
-    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/vendor/animate.min.css">
-    <link rel="stylesheet" href="css/vendor/aos.css">
-    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
-    
-
-    <!-- Theme Style -->
-    <link rel="stylesheet" href="css/style.css">
-
-  </head>
-  <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
-
-    <nav class="unslate_co--site-mobile-menu">
-      <div class="close-wrap d-flex">
-        <a href="#" class="d-flex ml-auto js-menu-toggle">
-          <span class="close-label">Close</span>
-          <div class="close-times">
-            <span class="bar1"></span>
-            <span class="bar2"></span>
-          </div>
-        </a>
-      </div>
-      <div class="site-mobile-inner"></div>
-    </nav>
 
 
-    <div class="unslate_co--site-wrap">
 
-      <div class="unslate_co--site-inner">
+<section id="stage-section">
+    <link rel="stylesheet" href="style.css" />
+  
+  <div class="stage-container">
+    <h2 class="section-title">Recherche de stage</h2>
+    <img src="images/divider.png" alt="divider" class="divider" width="76" />
 
-        <div class="lines-wrap">
-          <div class="lines-inner">
-            <div class="lines"></div>
-          </div>
-        </div>
-        <!-- END lines -->
-
-
-    
-      <div class="unslate_co--section" id="testimonial-section">
-        <div class="container">
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Ma recherche de stages</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-        </div>
-
-        <div class="owl-carousel testimonial-slider" data-aos="fade-up">
-          <div>
-            <div class="testimonial-v1">
-              <div class="testimonial-inner-bg">
-                <span class="quote">&ldquo;</span>
-                <blockquote>
-                  Description: Nullam dapibus, nisl ut tempus pulvinar, velit dui gravida mi, a viverra purus turpis in metus.
-                </blockquote>
-              </div>
-              
-              <div class="testimonial-author-info">
-                <img src="images/image.jpg" alt="Image">
-                <h3>Company</h3>
-                <span class="d-block position">position</span>
-              </div>
-
-            </div>
-          </div>
-          <div>
-            <div class="testimonial-v1">
-              <div class="testimonial-inner-bg">
-                <span class="quote">&ldquo;</span>
-                <blockquote>
-                  Description: Nullam dapibus, nisl ut tempus pulvinar, velit dui gravida mi, a viverra purus turpis in metus.
-                </blockquote>
-              </div>
-              
-              <div class="testimonial-author-info">
-                <img src="images/image.jpg" alt="Image">
-                <h3>Company</h3>
-                <span class="d-block position">position</span>
-              </div>
-
-            </div>
-          </div>
-          <div>
-            <div class="testimonial-v1">
-              <div class="testimonial-inner-bg">
-                <span class="quote">&ldquo;</span>
-                <blockquote>
-                  Description: Nullam dapibus, nisl ut tempus pulvinar, velit dui gravida mi, a viverra purus turpis in metus.
-                </blockquote>
-              </div>
-              
-              <div class="testimonial-author-info">
-                <img src="images/image.jpg" alt="Image">
-                <h3>Company</h3>
-                <span class="d-block position">Position</span>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
+    <div class="carousel-wrapper">
+      <div class="carousel-slide active">
+        <span class="quote">&ldquo;</span>
+        <blockquote>
+          Participation à des ateliers de cybersécurité et création de mini-outils Python.
+        </blockquote>
+        <img src="images/image1.jpg" alt="Entreprise 1">
+        <h3>Entreprise Alpha</h3>
+        <span class="position">Développement sécurité</span>
       </div>
 
-
-
+      <div class="carousel-slide">
+        <span class="quote">&ldquo;</span>
+        <blockquote>
+          Découverte du SOC, analyse de journaux et rapport de vulnérabilités.
+        </blockquote>
+        <img src="images/image2.jpg" alt="Entreprise 2">
+        <h3>Entreprise Beta</h3>
+        <span class="position">Stagiaire analyste</span>
       </div>
 
-       
-    </body>
-</html>
+      <div class="carousel-slide">
+        <span class="quote">&ldquo;</span>
+        <blockquote>
+          Automatisation de tâches réseau avec Bash et audit de configuration.
+        </blockquote>
+        <img src="images/image3.jpg" alt="Entreprise 3">
+        <h3>Entreprise Gamma</h3>
+        <span class="position">Audit & Scripts</span>
+      </div>
+
+      <button class="carousel-btn prev">&lt;</button>
+      <button class="carousel-btn next">&gt;</button>
+    </div>
+  </div>
+
+</section>
+
+<script>
+  const slides = document.querySelectorAll('.carousel-slide');
+  const prev = document.querySelector('.carousel-btn.prev');
+  const next = document.querySelector('.carousel-btn.next');
+  let current = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) slide.classList.add('active');
+    });
+  }
+
+  next.addEventListener('click', () => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  });
+
+  prev.addEventListener('click', () => {
+    current = (current - 1 + slides.length) % slides.length;
+    showSlide(current);
+  });
+
+  setInterval(() => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }, 7000);
+</script>
+

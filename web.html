@@ -1,83 +1,47 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <title>Développement Web &mdash; Portfolio</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <meta name="description" content="Collection de projets de développement web, montrant diverses fonctionnalités et applications sur des sites et des applications web.">
-  <meta name="keywords" content="Développement web, HTML, CSS, JavaScript, projets, portfolio">
-  <meta name="author" content="Votre Nom">
-
-  <link rel="stylesheet" href="css/vendor/icomoon/style.css">
-  <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/vendor/aos.css">
-  <link rel="stylesheet" href="css/vendor/animate.min.css">
-  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-  <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="project-style.css" />
 </head>
-
-<body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+<body>
 
   <!-- Navigation -->
-  <nav class="unslate_co--site-nav site-nav-target">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md-6">
-          <ul class="site-nav-ul">
-            <li><a href="index.html#home-section">Home</a></li>
-            <li><a href="index.html#portfolio-section">Projets</a></li>
-            <li><a href="index.html#contact-section">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <nav>
+    <ul>
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#project">Projets</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
   </nav>
-  <!-- END Navigation -->
 
   <!-- Hero Section -->
-  <div class="cover-v1 gradient-bottom-black jarallax">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-10 mx-auto text-center">
-          <h1 class="heading">Développement Web</h1>
-          <h2 class="subheading">Projets variés montrant des applications web dynamiques et interactives.</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- END Hero Section -->
+  <section id="hero">
+    <h1>Développement Web</h1>
+    <h2>Projets variés montrant des applications web dynamiques et interactives.</h2>
+  </section>
 
   <!-- Portfolio Section -->
-  <div class="container">
-    <div class="portfolio-single-wrap unslate_co--section" id="portfolio-single-section">
-      <div class="portfolio-single-inner">
-        <h2 class="heading-portfolio-single-h2">Projets en Développement Web</h2>
-        <div class="row">
-          <div class="col-lg-8">
-            <p><a href="images/web_project1.jpg" data-fancybox="gal"><img src="images/web_project1.jpg" alt="Image" class="img-fluid"></a></p>
-            <p><a href="images/web_project2.jpg" data-fancybox="gal"><img src="images/web_project2.jpg" alt="Image" class="img-fluid"></a></p>
-          </div>
-          <div class="col-lg-4">
-            <div class="detail-v1">
-              <span class="detail-label">Description</span>
-              <p>Une série de projets en développement web incluant des sites interactifs, des applications avec des bases de données, et des interfaces utilisateur responsives.</p>
-              <span class="detail-label">Date</span>
-              <span class="detail-val">Mars 2024</span>
-              <span class="detail-label">Technologies</span>
-              <span class="detail-val">HTML, CSS, JavaScript, React, Node.js</span>
-            </div>
-          </div>
-        </div>
+  <section id="portfolio">
+    <div id="portfolio-wrapper">
+      <div id="images">
+        <a href="images/assembler_compiler1.jpg" data-fancybox="gal">
+          <img src="images/assembler_compiler1.jpg" alt="Image 1" />
+        </a>
+        <a href="images/assembler_compiler2.jpg" data-fancybox="gal">
+          <img src="images/assembler_compiler2.jpg" alt="Image 2" />
+        </a>
       </div>
+      <aside id="details">
+        <p><strong>Description</strong><br>
+         Ce projet implique la conception d'un centre de données Tier 2 avec une gestion efficace de l'énergie et des systèmes de refroidissement. Il comprend l'optimisation de la consommation énergétique et l'intégration de solutions de refroidissement N+1.
+        <p><strong>Date:</strong> 2023 - 2026 </p>
+        <p><strong>Technologies:</strong> HTML, CSS, JavaScript, React, Node.js</p>
+      </aside>
     </div>
-  </div>
-  <!-- END Portfolio Section -->
-
-  <script src="js/main.js"></script>
-
+  </section>
 </body>
-
 </html>

@@ -1,124 +1,91 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<body>
+  <link rel="stylesheet" href="css/style.css">
 
-    <meta name="description" content="">
-    <meta name="keywords" content="html, css, javascript, jquery">
-    <meta name="author" content="">
+  <section id="competences-section">
+    <h2 class="section-title">Compétences</h2>
+    <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
 
-    <link rel="stylesheet" href="css/vendor/icomoon/style.css">
-    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/vendor/animate.min.css">
-    <link rel="stylesheet" href="css/vendor/aos.css">
-    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
-    
-
-    <!-- Theme Style -->
-    <link rel="stylesheet" href="css/style.css">
-
-  </head>
-  <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
-
-    <nav class="unslate_co--site-mobile-menu">
-      <div class="close-wrap d-flex">
-        <a href="#" class="d-flex ml-auto js-menu-toggle">
-          <span class="close-label">Close</span>
-          <div class="close-times">
-            <span class="bar1"></span>
-            <span class="bar2"></span>
-          </div>
-        </a>
-      </div>
-      <div class="site-mobile-inner"></div>
-    </nav>
-
-
-    <div class="unslate_co--site-wrap">
-
-      <div class="unslate_co--site-inner">
-
-        <div class="lines-wrap">
-          <div class="lines-inner">
-            <div class="lines"></div>
-          </div>
-        </div>
-        <!-- END lines -->
-
-
-       <div class="unslate_co--section" id="services-section">
-        <div class="container">
-
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Competences</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-
-          <div class="row gutter-v3">
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/001-options.svg" alt="Image" width="45">
-                </div>
-                <h3>Cyber <br> security</h3>
-                <p></p>
-              </div> 
-            </div>
-
-          <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/002-chat.svg" alt="Icon" width="45">
-                </div>
-                <h3>Networking</h3>
-                <p></p>
-              </div> 
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/003-contact-book.svg" alt="Image" class="img-fluid" width="45">
-                </div>
-                <h3>Operating <br> Systems</h3>
-                <p> </p>
-              </div> 
-            </div>
-
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/004-percentage.svg" alt="Image" width="45">
-                </div>
-                <h3>Web <br> Development</h3>
-                <p> </p>
-              </div> 
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/006-goal.svg" alt="Image" width="45">
-                </div>
-                <h3> Programming</h3>
-                <p> </p>
-              </div> 
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/005-line-chart.svg" alt="Image" width="45">
-                </div>
-                <h3> Embedded <br> systems </h3>
-                <p> </p>
-              </div> 
-            </div>
-
-          </div>
+    <div class="competence-grid">
+      <div class="competence-card">
+        <img src="images/svg/001-options.svg" alt="Cyber security" width="45">
+        <h3>Cyber <br> security</h3>
+        <div class="tooltip">
+          • Firewalling<br>
+          • IDS/IPS<br>
+          • SIEM (analyse de logs)<br>
+          • Vulnérabilités et patching<br>
+          • Gestion des accès<br>
+          • Sécurité réseau et endpoint<br>
+          • Analyse de malware
         </div>
       </div>
 
-      
+
+      <div class="competence-card">
+        <img src="images/svg/002-chat.svg" alt="Networking" width="45">
+        <h3>Networking</h3>
+        <div class="tooltip">
+          • Modèle OSI/TCP-IP<br>
+          • Routage statique/dynamique<br>
+          • NAT, VLAN, VPN<br>
+          • Configuration de switches/routeurs<br>
+          • Wireshark / Analyse de paquets<br>
+          • Sécurité réseau
         </div>
-    </body>
-</html>
+      </div>
+
+      <div class="competence-card">
+        <img src="images/svg/003-contact-book.svg" alt="Operating Systems" width="45">
+        <h3>Operating <br> Systems</h3>
+        <div class="tooltip">
+        • Linux (Bash, systemd, permissions)<br>
+        • Windows (CMD, PowerShell, GPO)<br>
+        • Administration système<br>
+        • Virtualisation (VMware, VirtualBox)<br>
+        • Gestion des utilisateurs/services
+      </div>
+
+      </div>
+
+      <div class="competence-card">
+        <img src="images/svg/004-percentage.svg" alt="Web Development" width="45">
+        <h3>Web <br> Development</h3>
+        <div class="tooltip">
+          • HTML5 / CSS3 / JavaScript<br>
+          • Responsive design<br>
+          • Systèmes de routing dynamiques<br>
+          • Animations CSS / JS<br>
+          • Sans librairies externes<br>
+          • Conception UI/UX simple et fluide
+        </div>
+
+      </div>
+
+      <div class="competence-card">
+        <img src="images/svg/006-goal.svg" alt="Programming" width="45">
+        <h3>Programming</h3>
+        <div class="tooltip">
+          • Python (scripts, outils de sécurité)<br>
+          • JavaScript natif<br>
+          • C/C++ (bases système et bas niveau)<br>
+          • Concepts de POO<br>
+          • Gestion de projets avec Git
+        </div>
+
+      </div>
+
+      <div class="competence-card">
+        <img src="images/svg/005-line-chart.svg" alt="Embedded Systems" width="45">
+        <h3>Embedded <br> systems</h3>
+        <div class="tooltip">
+          • Microcontrôleurs (Arduino, STM32)<br>
+          • Capteurs / Actionneurs<br>
+          • Communication série/I2C/SPI<br>
+          • C / Assembleur de base<br>
+          • Optimisation mémoire/code
+        </div>
+
+      </div>
+    </div>
+  </section>
+</body>

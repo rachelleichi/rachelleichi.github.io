@@ -1,84 +1,46 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <title>Applications Python &mdash; Portfolio</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <meta name="description" content="Présentation d'un projet d'applications développées en Python, démontrant diverses fonctionnalités allant de l'automatisation à l'analyse de données.">
-  <meta name="keywords" content="Python, applications, programmation, projet, portfolio, automatisation, analyse de données">
-  <meta name="author" content="Votre Nom">
-
-  <link rel="stylesheet" href="css/vendor/icomoon/style.css">
-  <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/vendor/aos.css">
-  <link rel="stylesheet" href="css/vendor/animate.min.css">
-  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-  <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="project-style.css" />
 </head>
+<body>
 
-<body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
-
-  <!-- Navigation -->
-  <nav class="unslate_co--site-nav site-nav-target">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md-6">
-          <ul class="site-nav-ul">
-            <li><a href="index.html#home-section">Home</a></li>
-            <li><a href="index.html#portfolio-section">Projets</a></li>
-            <li><a href="index.html#contact-section">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+<!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#project">Projets</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
   </nav>
-  <!-- END Navigation -->
 
   <!-- Hero Section -->
-  <div class="cover-v1 gradient-bottom-black jarallax">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-10 mx-auto text-center">
-          <h1 class="heading">Applications Python</h1>
-          <h2 class="subheading">Développement d'applications Python pour automatisation, analyse de données et plus.</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- END Hero Section -->
+  <section id="hero">
+    <h1>Applications Python</h1>
+    <h2> Développement d'applications Python pour automatisation, analyse de données et plus </h2>
+  </section>
 
   <!-- Portfolio Section -->
-  <div class="container">
-    <div class="portfolio-single-wrap unslate_co--section" id="portfolio-single-section">
-      <div class="portfolio-single-inner">
-        <h2 class="heading-portfolio-single-h2">Applications Développées en Python</h2>
-        <div class="row">
-          <div class="col-lg-8">
-            <p><a href="images/python_app1.jpg" data-fancybox="gal"><img src="images/python_app1.jpg" alt="Image" class="img-fluid"></a></p>
-            <p><a href="images/python_app2.jpg" data-fancybox="gal"><img src="images/python_app2.jpg" alt="Image" class="img-fluid"></a></p>
-          </div>
-          <div class="col-lg-4">
-            <div class="detail-v1">
-              <span class="detail-label">Description</span>
-              <p>Ce projet consiste en une série d'applications Python développées pour des tâches variées telles que l'automatisation des processus, l'analyse de données, et le traitement des fichiers. Les applications incluent des scripts pour l'intégration avec des API et des solutions d'optimisation des flux de travail.</p>
-              <span class="detail-label">Date</span>
-              <span class="detail-val">Mars 2025</span>
-              <span class="detail-label">Technologies</span>
-              <span class="detail-val">Python, Pandas, NumPy, APIs, Tkinter</span>
-            </div>
-          </div>
-        </div>
+  <section id="portfolio">
+    <div id="portfolio-wrapper">
+      <div id="images">
+        <a href="images/assembler_compiler1.jpg" data-fancybox="gal">
+          <img src="images/assembler_compiler1.jpg" alt="Image 1" />
+        </a>
+        <a href="images/assembler_compiler2.jpg" data-fancybox="gal">
+          <img src="images/assembler_compiler2.jpg" alt="Image 2" />
+        </a>
       </div>
+      <aside id="details">
+        <p><strong>Description</strong><br>
+        Ce projet consiste en une série d'applications Python développées pour des tâches variées telles que l'automatisation des processus, l'analyse de données, et le traitement des fichiers. Les applications incluent des scripts pour l'intégration avec des API et des solutions d'optimisation des flux de travail.
+        <p><strong>Date:</strong> Avril 2025</p>
+        <p><strong>Technologies:</strong>Python, Pandas, NumPy, Kivy , Tkinter</p>
+      </aside>
     </div>
-  </div>
-  <!-- END Portfolio Section -->
-
-  <script src="js/scripts-dist.js"></script>
-  <script src="js/main.js"></script>
-
+  </section>
 </body>
-
-</html>

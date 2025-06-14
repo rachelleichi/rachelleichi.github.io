@@ -1,84 +1,55 @@
-
-  <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
-
-    <nav class="unslate_co--site-mobile-menu">
-      <div class="close-wrap d-flex">
-        <a href="#" class="d-flex ml-auto js-menu-toggle">
-          <span class="close-label">Close</span>
-          <div class="close-times">
-            <span class="bar1"></span>
-            <span class="bar2"></span>
-          </div>
-        </a>
-      </div>
-      <div class="site-mobile-inner"></div>
-    </nav>
+<body >
+  <main>
+ <h1 class="section-title">Experience</h1>
+ <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
 
 
-    <div class="unslate_co--site-wrap">
-
-      <div class="unslate_co--site-inner">
-
-        <div class="lines-wrap">
-          <div class="lines-inner">
-            <div class="lines"></div>
-          </div>
-        </div>
-        <!-- END lines -->
-
-
-
-<div class="unslate_co--section" id="journal-section">
-        <div class="container">
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Experiences</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-      
-          <div class="row gutter-v4 align-items-stretch">
-            <!-- First post -->
-            <div class="col-4 blog-post-entry" data-aos="fade-up" data-aos-delay="0">
-              <a href="afev.html" class="grid-item blog-item w-100 h-100">
+          <div id="experience-list">
+            <!-- First experience -->
+            <div class="experience" data-file="afev.html">
+                <img src="images/afev.png" alt="Bénévolat - AFEV" loading="lazy" />
                 <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Bénévolat</h3>
-                    <p class="post-meta">Association AFEV <span class="small">&bullet;</span> Septembre 2024 - Présent</p>
-                  </div>
+                  <h3>Bénévolat</h3>
+                  <p class="post-meta">Association AFEV <span class="small">&bullet;</span> Septembre 2024 - Présent</p>
                 </div>
-                <img src="images/afev.jpg" class="lazyload" alt="Image" />
-              </a>
             </div>
-      
-            <!-- Second post -->
-            <div class="col-4 blog-post-entry" data-aos="fade-up" data-aos-delay="100">
-              <a href="ser.html" class="grid-iem blog-item w-100 h-100">
+
+            <!-- Second experience -->
+            <div class="experience" data-file="ser.html">
+                <img src="images/unis.jpeg" alt="Service Civique - UNIS-CITÉ" loading="lazy" />
                 <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Service Civique</h3>
-                    <p class="post-meta">CDD - Association UNIS-CITÉ ,Avignon <span class="small">&bullet;</span> Octobre 2023 - Juillet 2024</p>
-                  </div>
+                  <h3>Service Civique</h3>
+                  <p class="post-meta">CDD - Association UNIS-CITÉ, Avignon <span class="small">&bullet;</span> Octobre 2023 - Juillet 2024</p>
                 </div>
-                <img src="images/unis.jpeg" class="lazyload" alt="Image" />
-              </a>
             </div>
-      
-            <!-- Third post -->
-            <div class="col-4 blog-post-entry" data-aos="fade-up" data-aos-delay="0">
-              <a href="pro.html" class="grid-item blog-item w-100 h-100">
+
+            <!-- Third experience -->
+            <div class="experience" data-file="pro.html">
+                <img src="images/mat.jpeg" alt="Projet recherche du nombre" loading="lazy" />
                 <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Projet recherche du nombre</h3>
-                    <p class="post-meta">Ecoles maternelle ,Marseille<span class="small">&bullet;</span> Oct 2024 - Dec 2024</p>
-                  </div>
+                  <h3>Projet recherche du nombre</h3>
+                  <p class="post-meta">Ecoles maternelle, Marseille <span class="small">&bullet;</span> Oct 2024 - Dec 2024</p>
                 </div>
-                <img src="images/mat.jpeg" class="lazyload" alt="Image" />
-              </a>
             </div>
           </div>
-      
-        </div>
-      </div>
+          <!-- End experience-list -->
 
-      </div>
-      
-      </body>
+  
+
+    </main>
+     <script>
+
+    document.querySelectorAll('.experience').forEach(project => {
+      project.style.cursor = 'pointer'; // changer le curseur
+      project.addEventListener('click', () => {
+          const file = project.getAttribute('data-file');
+          if (file) {
+              window.location.href = file; // redirection vers le fichier
+          }
+      });
+  });
+
+
+
+  </script>
+</body>

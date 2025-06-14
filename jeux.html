@@ -1,170 +1,46 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <title>JeuxC++ &mdash; Portfolio</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <meta name="description" content="Projet jeux développés en C++ pour un portfolio interactif">
-  <meta name="keywords" content="C++, jeux, programmation, portfolio">
-  <meta name="author" content="Votre Nom">
-
-  <link rel="stylesheet" href="css/vendor/icomoon/style.css">
-  <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/vendor/aos.css">
-  <link rel="stylesheet" href="css/vendor/animate.min.css">
-  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-  <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="project-style.css" />
 </head>
+<body>
 
-<body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
-
-  <!-- Mobile Menu -->
-  <nav class="unslate_co--site-mobile-menu">
-    <div class="close-wrap d-flex">
-      <a href="#" class="d-flex ml-auto js-menu-toggle">
-        <span class="close-label">Close</span>
-        <div class="close-times">
-          <span class="bar1"></span>
-          <span class="bar2"></span>
-        </div>
-      </a>
-    </div>
-    <div class="site-mobile-inner"></div>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#project">Projets</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
   </nav>
 
-  <div class="unslate_co--site-wrap">
-    <div class="unslate_co--site-inner">
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>JeuxC++</h1>
+    <h2>Découvrez mes projets de jeux</h2>
+  </section>
 
-      <!-- Navigation -->
-      <nav class="unslate_co--site-nav site-nav-target">
-        <div class="container">
-          <div class="row align-items-center justify-content-between text-left">
-            <div class="col-md-5 text-right">
-              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li class="has-children">
-                  <a href="index.html#home-section" class="nav-link">Home</a>
-                  <ul class="dropdown">
-                    <li><a href="index.html">Hero Image BG</a></li>
-                    <li><a href="index-video.html">Video BG</a></li>
-                    <li><a href="index-hero-slider.html">Hero Slider</a></li>
-                    <li><a href="index-sidebar-menu.html">Sidebar Menu</a></li>
-                    <li><a href="index-right-menu.html">Right Menu</a></li>
-                  </ul>
-                </li>
-                <li><a href="index.html#portfolio-section" class="nav-link">Projets</a></li>
-                <li><a href="index.html#about-section" class="nav-link">About</a></li>
-                <li><a href="index.html#services-section" class="nav-link">Compétences</a></li>
-              </ul>
-            </div>
-            <div class="site-logo pos-absolute">
-              <a href="index.html" class="unslate_co--site-logo"><span>.</span></a>
-            </div>
-            <div class="col-md-5 text-right text-lg-left">
-              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li><a href="index.html#skills-section" class="nav-link">Skills</a></li>
-                <li><a href="index.html#testimonial-section" class="nav-link">Recherche stage</a></li>
-                <li><a href="index.html#journal-section" class="nav-link">Expériences</a></li>
-                <li><a href="index.html#contact-section" class="nav-link">Contact</a></li>
-              </ul>
-
-              <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
-                <li><a href="#" class="js-menu-toggle">Menu</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <!-- END Navigation -->
-
-      <!-- Hero Section -->
-      <div class="cover-v1 gradient-bottom-black jarallax">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-10 mx-auto text-center">
-              <h1 class="heading" data-aos="fade-up">JeuxC++</h1>
-              <h2 class="subheading" data-aos="fade-up" data-aos-delay="100">Découvrez mes projets de jeux en C++</h2>
-            </div>
-          </div>
-        </div>
-        <a href="#portfolio-single-section" class="mouse-wrap smoothscroll">
-          <span class="mouse">
-            <span class="scroll"></span>
-          </span>
-          <span class="mouse-label">Scroll</span>
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div id="portfolio-wrapper">
+      <div id="images">
+        <a href="images/assembler_compiler1.jpg" data-fancybox="gal">
+          <img src="images/assembler_compiler1.jpg" alt="Image 1" />
+        </a>
+        <a href="images/assembler_compiler2.jpg" data-fancybox="gal">
+          <img src="images/assembler_compiler2.jpg" alt="Image 2" />
         </a>
       </div>
-      <!-- END Hero Section -->
-
-      <!-- Portfolio Section -->
-      <div class="container">
-        <div class="portfolio-single-wrap unslate_co--section" id="portfolio-single-section">
-          <div class="portfolio-single-inner">
-
-            <h2 class="heading-portfolio-single-h2">JeuxC++</h2>
-            <div class="row justify-content-between align-items-stretch">
-
-              <div class="col-lg-8">
-                <p><a href="images/cpp_game1.jpg" data-fancybox="gal"><img src="images/cpp_game1.jpg" alt="Image" class="img-fluid"></a></p>
-                <p><a href="images/cpp_game2.jpg" data-fancybox="gal"><img src="images/cpp_game2.jpg" alt="Image" class="img-fluid"></a></p>
-                <p><a href="images/cpp_game3.jpg" data-fancybox="gal"><img src="images/cpp_game3.jpg" alt="Image" class="img-fluid"></a></p>
-              </div>
-
-              <div class="col-lg-4 pl-lg-5">
-                <div class="unslate_co--sticky">
-                  <div class="row">
-                    <div class="col-md-12 mb-4">
-                      <div class="detail-v1">
-                        <span class="detail-label">Description du projet</span>
-                        <p>Développement de jeux interactifs en C++ comme Snake, Tetris et Connect Four avec une architecture robuste et optimisée.</p>
-                      </div>
-                    </div>
-
-                    <div class="col-md-12 mb-4">
-                      <div class="detail-v1">
-                        <span class="detail-label">Date</span>
-                        <span class="detail-val">Décembre 2024</span>
-                      </div>
-                    </div>
-
-                    <div class="col-md-12 mb-4">
-                      <div class="detail-v1">
-                        <span class="detail-label">Technologies</span>
-                        <span class="detail-val">C++, SDL2, SFML</span>
-                      </div>
-                    </div>
-
-                    <div class="col-md-12 mb-4">
-                      <div class="detail-v1">
-                        <span class="detail-label">Objectifs</span>
-                        <p>Apprentissage des concepts avancés de programmation, gestion de mémoire et implémentation de designs interactifs.</p>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-      
+      <aside id="details">
+        <p><strong>Description</strong><br>
+         Développement de jeux interactifs en C++ comme Snake, Tetris et Connect Four avec une architecture robuste et optimisée.
+        <p><strong>Date:</strong> 2023 - 2026 </p>
+        <p><strong>Technologies:</strong> C++, python </p>
+      </aside>
     </div>
-  </div>
-
-  <!-- Loader -->
-  <div id="unslate_co--overlayer"></div>
-  <div class="site-loader-wrap">
-    <div class="site-loader"></div>
-  </div>
-
-  <script src="js/scripts-dist.js"></script>
-  <script src="js/main.js"></script>
-
+  </section>
 </body>
-
-</html>

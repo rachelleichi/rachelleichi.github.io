@@ -1,84 +1,48 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <title>Hébergement de Jeu sur Raspberry Pi &mdash; Portfolio</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <meta name="description" content="Présentation d'un projet d'hébergement de jeu sur Raspberry Pi, démontrant l'utilisation du matériel et des logiciels pour exécuter un jeu en ligne ou local.">
-  <meta name="keywords" content="Raspberry Pi, hébergement de jeu, serveur de jeu, projet, portfolio">
-  <meta name="author" content="Votre Nom">
-
-  <link rel="stylesheet" href="css/vendor/icomoon/style.css">
-  <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/vendor/aos.css">
-  <link rel="stylesheet" href="css/vendor/animate.min.css">
-  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-  <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="project-style.css" />
 </head>
-
-<body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+<body>
 
   <!-- Navigation -->
-  <nav class="unslate_co--site-nav site-nav-target">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md-6">
-          <ul class="site-nav-ul">
-            <li><a href="index.html#home-section">Home</a></li>
-            <li><a href="index.html#portfolio-section">Projets</a></li>
-            <li><a href="index.html#contact-section">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <nav>
+    <ul>
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#project">Projets</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
   </nav>
-  <!-- END Navigation -->
 
   <!-- Hero Section -->
-  <div class="cover-v1 gradient-bottom-black jarallax">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-10 mx-auto text-center">
-          <h1 class="heading">Hébergement de Jeu sur Raspberry Pi</h1>
-          <h2 class="subheading">Déploiement d'un serveur de jeu sur Raspberry Pi pour une expérience de jeu locale ou en ligne.</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- END Hero Section -->
+  <section id="hero">
+    <h1>Hébergement de Jeu sur Raspberry Pi </h1>
+    <h2>Déploiement d'un serveur de jeu sur Raspberry Pi pour une expérience de jeu locale ou en ligne.</h2>
+  </section>
 
   <!-- Portfolio Section -->
-  <div class="container">
-    <div class="portfolio-single-wrap unslate_co--section" id="portfolio-single-section">
-      <div class="portfolio-single-inner">
-        <h2 class="heading-portfolio-single-h2">Hébergement d'un Jeu sur Raspberry Pi</h2>
-        <div class="row">
-          <div class="col-lg-8">
-            <p><a href="images/raspberry_game_hosting1.jpg" data-fancybox="gal"><img src="images/raspberry_game_hosting1.jpg" alt="Image" class="img-fluid"></a></p>
-            <p><a href="images/raspberry_game_hosting2.jpg" data-fancybox="gal"><img src="images/raspberry_game_hosting2.jpg" alt="Image" class="img-fluid"></a></p>
-          </div>
-          <div class="col-lg-4">
-            <div class="detail-v1">
-              <span class="detail-label">Description</span>
-              <p>Ce projet consiste à héberger un jeu local ou en ligne sur un Raspberry Pi, en utilisant des outils comme RetroPie ou un serveur web pour exécuter un jeu multi-joueurs ou en solo. Il inclut la gestion de la connectivité, du stockage et des performances du Raspberry Pi.</p>
-              <span class="detail-label">Date</span>
-              <span class="detail-val">Janvier 2025</span>
-              <span class="detail-label">Technologies</span>
-              <span class="detail-val">Raspberry Pi, RetroPie, Serveur Web, Python, Linux</span>
-            </div>
-          </div>
-        </div>
+  <section id="portfolio">
+    <div id="portfolio-wrapper">
+      <div id="images">
+        <a href="images/assembler_compiler1.jpg" data-fancybox="gal">
+          <img src="images/assembler_compiler1.jpg" alt="Image 1" />
+        </a>
+        <a href="images/assembler_compiler2.jpg" data-fancybox="gal">
+          <img src="images/assembler_compiler2.jpg" alt="Image 2" />
+        </a>
       </div>
+      <aside id="details">
+        <p><strong>Description</strong><br>
+         Ce projet consiste à héberger un jeu local ou en ligne sur un Raspberry Pi, en utilisant des outils comme RetroPie ou un serveur web pour exécuter un jeu multi-joueurs ou en solo. Il inclut la gestion de la connectivité, du stockage et des performances du Raspberry Pi.
+        </p>
+        <p><strong>Date:</strong> Feb 2026 </p>
+        <p><strong>Technologies:</strong> Raspberry Pi, BLEUTOOTH , Serveur Web, Python, Linux</p>
+      </aside>
     </div>
-  </div>
-  <!-- END Portfolio Section -->
-
-  <script src="js/scripts-dist.js"></script>
-  <script src="js/main.js"></script>
-
+  </section>
 </body>
-
 </html>
