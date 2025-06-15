@@ -68,14 +68,6 @@
   </main>
 
   <div id="footer-container"></div>
-  <script>
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-container').innerHTML = data;
-      })
-      .catch(error => console.error('Erreur de chargement du footer:', error));
-  </script>
 
   <!-- jQuery (local ou CDN) -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
