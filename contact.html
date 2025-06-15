@@ -30,7 +30,10 @@
             </div>
             <div class="form-row">
               <input type="submit" class="btn btn-outline-pill btn-custom-light" value="Send Message">
+              <!-- Hidden export button -->
+              <!-- <button id="exportMessages" style="display:none;">Export Messages</button> -->
               <span class="submitting"></span>
+
             </div>
             <!-- <div id="form-message-warning" class="mt-4"></div> 
             <div id="form-message-success">Your message was sent, thank you!</div> -->
@@ -56,21 +59,51 @@
     </div>
   </div>
 
+<script>
+  // Save message to localStorage array
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
 
-  <script>
-    document.getElementById("contactForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      
-      const name = document.getElementById("name").value;
-      const email = document.getElementById("email").value;
-      const message = document.getElementById("message").value;
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
 
-      const data = { name, email, message };
+    const data = { name, email, message, timestamp: new Date().toISOString() };
 
-      localStorage.setItem("lastMessage", JSON.stringify(data));
+    // Get existing messages or initialize
+    const existing = JSON.parse(localStorage.getItem("messages")) || [];
+    existing.push(data);
 
-      alert("Message sauvegardé localement !");
-    });
+    // Save updated array
+    localStorage.setItem("messages", JSON.stringify(existing));
 
-  </script>
+    alert("Message sauvegardé localement !");
+  });
+
+  // Secret key to show export button (e.g., press `Ctrl + E`)
+  document.addEventListener("keydown", function(e) {
+    if (e.ctrlKey && e.key === "e") {
+      document.getElementById("exportMessages").style.display = "inline-block";
+    }
+  });
+
+  // Export messages to a .json file
+  document.getElementById("exportMessages").addEventListener("click", function() {
+    const messages = JSON.parse(localStorage.getItem("messages")) || [];
+    const jsonData = JSON.stringify(messages, null, 2);
+    const blob = new Blob([jsonData], { type: "application/json" });
+
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "contact-messages-log.json";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(link.href);
+
+    alert("Fichier JSON exporté !");
+  });
+</script>
+
+
 </body>
