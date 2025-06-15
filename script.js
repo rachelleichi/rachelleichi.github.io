@@ -122,6 +122,8 @@ fetch('footer.html')
   })
   .catch(error => console.error('Erreur de chargement du footer:', error));
 
+  
+
 
 
 
