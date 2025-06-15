@@ -1,12 +1,11 @@
 <body>
   <link rel="stylesheet" href="style.css">
-
+  <main>
   <div class="unslate_co--section" id="contact-section">
     <div class="container">
-      <div class="section-heading-wrap text-center mb-5">
         <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Get In Touch</span></h2>
         <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-      </div>
+      
 
       <div class="contact-container">
         <!-- Left side: Form -->
@@ -59,51 +58,5 @@
     </div>
   </div>
 
-<script>
-  // Save message to localStorage array
-  document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
-
-    const data = { name, email, message, timestamp: new Date().toISOString() };
-
-    // Get existing messages or initialize
-    const existing = JSON.parse(localStorage.getItem("messages")) || [];
-    existing.push(data);
-
-    // Save updated array
-    localStorage.setItem("messages", JSON.stringify(existing));
-
-    alert("Message sauvegardé localement !");
-  });
-
-  // Secret key to show export button (e.g., press `Ctrl + E`)
-  document.addEventListener("keydown", function(e) {
-    if (e.ctrlKey && e.key === "e") {
-      document.getElementById("exportMessages").style.display = "inline-block";
-    }
-  });
-
-  // Export messages to a .json file
-  document.getElementById("exportMessages").addEventListener("click", function() {
-    const messages = JSON.parse(localStorage.getItem("messages")) || [];
-    const jsonData = JSON.stringify(messages, null, 2);
-    const blob = new Blob([jsonData], { type: "application/json" });
-
-    const link = document.createElement("a");
-    link.href = URL.createObjectURL(blob);
-    link.download = "contact-messages-log.json";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(link.href);
-
-    alert("Fichier JSON exporté !");
-  });
-</script>
-
-
+</main>
 </body>

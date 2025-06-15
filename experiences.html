@@ -39,17 +39,17 @@
     </main>
      <script>
 
-    document.querySelectorAll('.experience').forEach(project => {
-      project.style.cursor = 'pointer'; // changer le curseur
-      project.addEventListener('click', () => {
-          const file = project.getAttribute('data-file');
-          if (file) {
-              window.location.href = file; // redirection vers le fichier
-          }
+        document.querySelectorAll('.experience').forEach(project => {
+          project.style.cursor = 'pointer'; // changer le curseur
+          project.addEventListener('click', () => {
+              const file = project.getAttribute('data-file');
+              if (file) {
+                  window.location.href = file; // redirection vers le fichier
+              }
+          });
       });
-  });
 
 
 
-  </script>
+      </script>
 </body>

@@ -968,6 +968,8 @@ textarea {
     color: #66fcf1;
   }
 
+  
+
  @media (max-width: 768px) {
   .carousel-btn.prev {
     left: 10px;

@@ -59,11 +59,17 @@
   let current = 0;
 
   function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.remove('active');
-      if (i === index) slide.classList.add('active');
-    });
+      slides.forEach((slide, i) => {
+        if (i === index) {
+          slide.classList.add('active');
+          slide.classList.add('fade-in');
+        } else {
+          slide.classList.remove('active');
+          slide.classList.remove('fade-in');
+        }
+      });
   }
+
 
   next.addEventListener('click', () => {
     current = (current + 1) % slides.length;
