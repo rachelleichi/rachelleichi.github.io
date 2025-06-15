@@ -121,9 +121,3 @@ fetch('footer.html')
     document.getElementById('footer-container').innerHTML = data;
   })
   .catch(error => console.error('Erreur de chargement du footer:', error));
-
-  
-
-
-
-
