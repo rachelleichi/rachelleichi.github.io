@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Arimo:400|Raleway:300,400,700&display=swap");
 
+
 /* ===============================
    BASE & GENERAL PAGE STYLES
    =============================== */
@@ -181,10 +182,6 @@ main {
     text-align: center;
     gap: 1rem;
   }
-/* 
-  .lock {
-    margin: 0 auto;
-  } */
 
   .home-text {
     max-width: 90%;
@@ -350,7 +347,6 @@ nav ul li a.active {
   }
 }
 
-
 /* ===============================
   Competences Section
    =============================== */
@@ -463,7 +459,6 @@ nav ul li a.active {
   text-align: center;
 }
 
-
 .divider {
   margin-bottom: 40px;
 }
@@ -539,10 +534,6 @@ nav ul li a.active {
     margin-right: auto;
   }
 }
-
-
-
-
 
 /* ===============================
    FEATURE CARDS (General project style)
@@ -904,7 +895,6 @@ textarea {
     color: #fff;
     overflow: visible;
   }
-
 
   .carousel-wrapper {
   position: relative;
