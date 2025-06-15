@@ -755,7 +755,7 @@ nav ul li a.active {
 /* Post meta under title in overlay */
 .experience .overlay p.post-meta {
   font-size: 0.85rem;
-  color: rgb(149, 157, 161);
+  color: rgb(242, 245, 247);
   margin-top: 0.25rem;
   font-weight: 300;
 }
@@ -913,7 +913,7 @@ textarea {
   border-radius: 20px; /* Rounded corners */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Soft shadow */
   padding: 30px;
-  overflow: hidden;
+  overflow: visible;
   }
 
   .carousel-slide {
