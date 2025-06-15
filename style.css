@@ -910,7 +910,7 @@ textarea {
   position: relative;
   max-width: 700px;
   margin: 40px auto;
-  background-color: #1e1e1e;
+  background-color: #000000;
   border-radius: 20px; /* Rounded corners */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Soft shadow */
   padding: 30px;
