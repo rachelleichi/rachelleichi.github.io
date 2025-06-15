@@ -111,6 +111,7 @@ main {
   padding: 1rem;
   color: #fff;
   word-break: break-word;
+  font-family: "Raleway", sans-serif;
 }
 
 /* Stream qui prend tout l’arrière-plan */
