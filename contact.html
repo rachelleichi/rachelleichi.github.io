@@ -15,17 +15,17 @@
             <div class="form-row">
               <div class="form-field">
                 <label for="name">Name</label>
-                <input name="name" type="text" id="name">
+                <input class = "input-form" name="name" type="text" id="name">
               </div>
               <div class="form-field">
                 <label for="email">Email</label>
-                <input name="email" type="email" id="email">
+                <input class = "input-form"  name="email" type="email" id="email">
               </div>
             </div>
             <div class="form-row">
               <div class="form-field full">
                 <label for="message">Write your message...</label>
-                <textarea name="message" id="message" rows="5"></textarea>
+                <textarea class = "input-form" name="message" id="message" rows="5"></textarea>
               </div>
             </div>
             <div class="form-row">
@@ -55,4 +55,22 @@
       </div>
     </div>
   </div>
+
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      const data = { name, email, message };
+
+      localStorage.setItem("lastMessage", JSON.stringify(data));
+
+      alert("Message sauvegardé localement !");
+    });
+
+  </script>
 </body>

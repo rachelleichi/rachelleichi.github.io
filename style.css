@@ -4,12 +4,10 @@
    BASE & GENERAL PAGE STYLES
    =============================== */
 
-/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* Base body styles */
 body {
   font-family: "Raleway", sans-serif;
   color: #fff;
@@ -21,36 +19,31 @@ body {
   position: relative;
 }
 
-/* Main container */
 .container {
   max-width: 900px;
   margin: auto;
   padding: 0 1rem;
 }
 
-/* MAIN CONTENT */
 main {
-  padding-top: 100px; /* space for fixed header */
+  padding-top: 100px;
   max-width: 900px;
   margin: auto;
 }
 
-/* Section with black background */
 .section-black {
   background: #000;
   padding: 60px 20px;
   min-height: 200px;
 }
 
-
-
-.reveal-content {
+/* .reveal-content {
   position: relative;
   z-index: 1;
   opacity: 0;
-  transform: translateX(-30px); /* start slightly left */
+  transform: translateX(-30px);
   animation: slideInText 0.8s ease-out forwards;
-  animation-delay: 0.3s; /* delay to your liking */
+  animation-delay: 0.3s;
 
   display: flex;
   flex-direction: column;
@@ -58,7 +51,7 @@ main {
   align-items: center;
   min-height: 200px;
   text-align: center;
-}
+} */
 
 @keyframes slideInText {
   to {
@@ -66,9 +59,141 @@ main {
     transform: translateX(0);
   }
 }
+.typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #66fcf1;
+  display: inline-block;
+}
 
+/* Animation de "Bienvenue" */
+.line1 {
+  animation: typing 2.5s steps(20, end) forwards, blink 0.7s step-end infinite;
+  width: 0;
+}
 
-/* FOOTER */
+/* Animation de la phrase après */
+.line2 {
+  animation: typing 4s steps(60, end) 2.6s forwards, blink 0.7s step-end infinite 2.6s;
+  width: 0;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #66fcf1; }
+}
+
+/* ===============================
+   Home Section
+   =============================== */
+.home-flex {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+/* Texte */
+.home-text {
+  flex: 1;
+  z-index: 3;
+  min-width: 300px;
+  max-width: 500px;
+  padding: 1rem;
+  color: #fff;
+  word-break: break-word;
+}
+
+/* Stream qui prend tout l’arrière-plan */
+.binary-stream {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Lock visible à droite */
+/* .lock {
+  position: relative;
+  z-index: 2;
+  flex: 0 0 120px;
+  height: 140px;
+  background: #66fcf1;
+  border-radius: 20% 20% 5% 5%;
+  box-shadow: 0 0 20px #66fcf1;
+  margin-right: 2rem;
+  align-self: center;
+}
+
+.lock::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 6px solid #66fcf1;
+  border-bottom: none;
+  border-radius: 50% 50% 0 0;
+  top: -35px;
+  left: 10px;
+} */
+
+/* Chiffres qui tombent */
+.binary-stream span {
+  position: absolute;
+  top: -20px;
+  color: #0ff;
+  font-size: 1rem;
+  animation: fall 3s linear infinite;
+  user-select: none;
+  opacity: 0.6;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(320px);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+/* 
+  .lock {
+    margin: 0 auto;
+  } */
+
+  .home-text {
+    max-width: 90%;
+  }
+}
+
+/* ===============================
+   FOOTER
+   =============================== */
+
 footer {
   text-align: center;
   padding: 20px;
@@ -92,7 +217,6 @@ header {
   box-shadow: 0 2px 8px rgba(0,0,0,0.8);
 }
 
-/* Navigation menu (centered) */
 header nav ul {
   display: flex;
   gap: 2rem;
@@ -101,7 +225,6 @@ header nav ul {
   padding: 0;
 }
 
-/* Navigation links */
 nav ul li a {
   color: #fff;
   text-decoration: none;
@@ -113,13 +236,11 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-
   border-bottom-color: #fff;
-  color:#66fcf1;          /* brighten text color on hover */
+  color: #66fcf1;
   transform: scale(1.05);
 }
 
-/* BURGER MENU (mobile) */
 .burger {
   display: none;
   flex-direction: column;
@@ -136,11 +257,7 @@ nav ul li a.active {
   border-radius: 2px;
 }
 
-/* Responsive header nav for mobile */
-  
-/* Responsive Navigation: Tablets and Below */
 @media (max-width: 768px) {
-  /* Smaller text and better spacing in nav */
   nav ul li a {
     font-size: 0.9rem;
     padding: 8px 0;
@@ -178,7 +295,6 @@ nav ul li a.active {
   }
 }
 
-/* Very small screens (phones) */
 @media (max-width: 480px) {
   nav ul li a {
     font-size: 0.8rem;
@@ -194,22 +310,17 @@ nav ul li a.active {
   }
 }
 
-
-
-
 /* ===============================
    GRID & LAYOUT STRUCTURE
    =============================== */
 
-/* Flex row helper */
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -0.75rem;  /* gutter */
+  margin-left: -0.75rem;
   margin-right: -0.75rem;
 }
 
-/* Columns base style */
 .col-md-6, .col-lg-4 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -217,7 +328,6 @@ nav ul li a.active {
   box-sizing: border-box;
 }
 
-/* 3 columns on large screens */
 @media (min-width: 992px) {
   .col-lg-4 {
     flex: 0 0 33.3333%;
@@ -225,7 +335,6 @@ nav ul li a.active {
   }
 }
 
-/* 2 columns on medium screens */
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-6 {
     flex: 0 0 50%;
@@ -233,13 +342,13 @@ nav ul li a.active {
   }
 }
 
-/* Full width on small screens */
 @media (max-width: 767px) {
   .col-md-6, .col-lg-4 {
     flex: 0 0 100%;
     max-width: 100%;
   }
 }
+
 
 /* ===============================
   Competences Section
@@ -669,7 +778,6 @@ nav ul li a.active {
     height: 250px !important;
   }
 }
-
 /* ===============================
    Contact Section
    =============================== */
@@ -686,116 +794,10 @@ nav ul li a.active {
 }
 
 .contact-info {
-  background: #f9f9f9;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
-
-.info-block {
-  margin-bottom: 1.5rem;
-}
-
-.info-block .label {
-  display: block;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 0.25rem;
-}
-
-.info-block .value {
-  color: #555;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-/* FORM STYLING */
-.form-row {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  margin-bottom: 1.5rem;
-}
-
-.form-field {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.form-field.full {
-  flex: 100%;
-}
-
-.form-field label {
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-.form-field input,
-.form-field textarea {
-  border: none;
-  border-bottom: 2px solid #ccc;
-  background: transparent;
-  padding: 0.5rem 0;
-  font-size: 1rem;
-  color: #000;
-  transition: border-color 0.3s;
-}
-
-.form-field input:focus,
-.form-field textarea:focus {
-  outline: none;
-  border-bottom-color:#66fcf1;
-}
-
-textarea {
-  resize: vertical;
-}
-
-/* BUTTON */
-.btn-custom-light {
-  background: #000;
-  color: #fff;
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.btn-custom-light:hover {
-  background: #00fff2;
-}
-
-/* RESPONSIVE */
-@media (max-width: 992px) {
-  .contact-container {
-    grid-template-columns: 1fr;
-  }
-  .contact-info {
-    margin-top: 2rem;
-  }
-}
-
-/* CONTACT LAYOUT */
-.contact-container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 3rem;
-  align-items: start;
-}
-
-.contact-form {
-  width: 100%;
-}
-
-.contact-info {
   background: black;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .info-block {
@@ -846,18 +848,23 @@ textarea {
   background: transparent;
   padding: 0.5rem 0;
   font-size: 1rem;
-  color: #000;
+  color: whitesmoke;
   transition: border-color 0.3s;
 }
 
 .form-field input:focus,
 .form-field textarea:focus {
   outline: none;
-  border-bottom-color: reds;
+  border-bottom-color: #66fcf1;
 }
 
 textarea {
   resize: vertical;
+}
+
+/* Placeholder color */
+::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* BUTTON */
@@ -872,7 +879,7 @@ textarea {
 }
 
 .btn-custom-light:hover {
-  background:#66fcf1;
+  background: #66fcf1;
 }
 
 /* RESPONSIVE */

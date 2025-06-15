@@ -31,13 +31,27 @@
   </header>
 
   <main>
-    <section id="home" class="section-black reveal-wrapper">
-      <div class="reveal-overlay"></div>
-      <div class="reveal-content">
-        <h2>Bienvenue</h2>
-        <p>Je suis <strong>Rachel Meflah</strong>, étudiante en cybersécurité à l'AMU - Marseille.</p>
-      </div>
-    </section>
+<section id="home" class="section-black reveal-wrapper">
+  <div class="reveal-overlay"></div>
+
+  <div class="home-flex">
+    <div class="binary-stream"></div> <!-- Fond animé -->
+
+    <div class="home-text">
+      <h2 class="typing-text line1">Bienvenue</h2>
+      <p class="typing-text line2">
+        Je suis <strong>Rachel Meflah</strong>, étudiante en cybersécurité à AMU - Marseille.
+      </p>
+    </div>
+
+    <!-- <div class="lock"></div> -->
+     <!-- Positionné à droite -->
+  </div>
+</section>
+
+
+
+
 
 
     <section id="projects" data-include="projects.html" class="section-black"></section>
@@ -57,5 +71,20 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- Script de chargement et nav -->
   <script src="script.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const binary = document.querySelector('.binary-stream');
+      for (let i = 0; i < 50; i++) {
+        const span = document.createElement('span');
+        span.textContent = Math.random() > 0.5 ? '0' : '1';
+        span.style.left = `${Math.random() * 100}%`;
+        span.style.animationDelay = `${Math.random() * 3}s`;
+        binary.appendChild(span);
+      }
+    });
+
+
+  </script>
 </body>
 </html>
