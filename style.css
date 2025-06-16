@@ -595,19 +595,28 @@ nav ul li a.active {
   object-fit: cover;
   transition: transform 0.5s ease;
   border-radius: 8px;
+  filter: contrast(1.05) brightness(1.1);
+  image-rendering: high-quality;
 }
 
 /* Zigzag effect: different heights for each column */
 .project:nth-child(3n + 1) img {
   height: 230px; /* left column */
+  image-rendering: high-quality;
+  filter: contrast(1.05) brightness(1.1);
 }
 
 .project:nth-child(3n + 2) img {
   height: 290px; /* middle column bigger */
+  image-rendering: high-quality;
+  filter: contrast(1.05) brightness(1.1);
 }
 
 .project:nth-child(3n) img {
   height: 230px; /* right column */
+  image-rendering: high-quality;
+  filter: contrast(1.05) brightness(1.1);
+  image-rendering: high-quality;
 }
 
 /* Zoom image slightly on hover */
@@ -692,19 +701,27 @@ nav ul li a.active {
   object-fit: cover;
   transition: transform 0.5s ease;
   border-radius: 8px;
+  filter: contrast(1.05) brightness(1.1);
+  image-rendering: high-quality;
 }
 
 /* Zigzag heights for images */
 .experience:nth-child(3n + 1) img {
   height: 230px;
+  image-rendering: high-quality;
+  filter: contrast(1.05) brightness(1.1);
 }
 
 .experience:nth-child(3n + 2) img {
   height: 280px;
+  image-rendering: high-quality;
+  filter: contrast(1.05) brightness(1.1);
 }
 
 .experience:nth-child(3n) img {
   height: 230px;
+  image-rendering: high-quality;
+  filter: contrast(1.05) brightness(1.1);
 }
 
 /* Zoom effect on hover */
@@ -759,6 +776,8 @@ nav ul li a.active {
   }
   .experience img {
     height: 250px !important;
+    image-rendering: high-quality;
+    filter: contrast(1.05) brightness(1.1);
   }
 }
 
@@ -768,6 +787,8 @@ nav ul li a.active {
   }
   .experience img {
     height: 250px !important;
+    image-rendering: high-quality;
+    filter : contrast(1.05) brightness(1.1);
   }
 }
 /* ===============================

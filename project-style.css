@@ -98,7 +98,7 @@ nav a:hover {
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
   filter: contrast(1.05) brightness(1.1);
-  image-rendering: auto;
+  image-rendering: high-quality;
 }
 
 #images img:hover {
