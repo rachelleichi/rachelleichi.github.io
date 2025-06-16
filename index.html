@@ -18,6 +18,7 @@
 
   <header>
     <nav>
+      <button class="close-btn" id="close-btn">&times;</button>
       <ul>
         <li><a href="#home" class="section-title">Accueil</a></li>
         <li><a href="#projects" class="section-title">Projets</a></li>
@@ -74,6 +75,19 @@
   <!-- Script de chargement et nav -->
   <script src="script.js"></script>
 
-  
+  <script>
+    const burger = document.getElementById('burger');
+    const navMenu = document.getElementById('nav-menu');
+    const closeBtn = document.getElementById('close-btn');
+
+    burger.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      navMenu.classList.remove('open');
+    });
+
+  </script>
 </body>
 </html>
