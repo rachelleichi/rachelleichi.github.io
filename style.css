@@ -657,7 +657,7 @@ nav ul li a.active {
 }
 
 /* Responsive adjustments for projects grid */
-@media (max-width: 1500px) {
+@media (max-width: 991px) {
   #projects-list {
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
   }
